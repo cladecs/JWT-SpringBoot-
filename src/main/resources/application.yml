@@ -1,0 +1,7 @@
+jwt:
+    #加密秘钥
+    secret: f4e2e5203fg45sf45g4de581c0f9eb5
+    #token，单位秒
+    expire: 6000
+    header: token
+
