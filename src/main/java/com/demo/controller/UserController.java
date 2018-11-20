@@ -31,7 +31,7 @@ public class UserController {
     }
 
     @PostMapping("/business")
-    public User business(@RequestBody Business business, @LoginUser User user) {//这里可以直接使用注解使用user的信息了
+    public User business(@RequestBody Business business, @LoginUser User user) {//在业务逻辑可以使用注解将我们的user注入进来
         logger.info("用户信息参数id:{},姓名:{}", user.getUserId(), user.getUserName());
         logger.info("我们的业务参数:{},{}", business.getStr(), business.getNum());
         return user;
